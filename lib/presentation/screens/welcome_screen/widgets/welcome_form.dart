@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:movie/presentation/screens/login_screen/login_screen.dart';
 import 'package:movie/shared/widgets/custom_filled_button.dart';
 import 'package:movie/shared/widgets/custom_outlined_button.dart';
 
@@ -40,10 +42,13 @@ class WelcomeForm extends StatelessWidget {
                       fontSize: 13,
                       fontWeight: FontWeight.w500),
                 ),
-                SizedBox(
-                    width: double.infinity,
-                    child: CustomFilledButton(
-                        onPressed: () {}, btnLabel: "Login")),
+                Hero(
+                  tag: 'login-btn',
+                  child: SizedBox(
+                      width: double.infinity,
+                      child: CustomFilledButton(
+                          onPressed: () => context.pushNamed(LoginScreen.name), btnLabel: "Login")),
+                ),
                 SizedBox(
                     width: double.infinity,
                     child: CustomOutlinedButton(
