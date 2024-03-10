@@ -19,7 +19,10 @@ class AppTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          foregroundColor: _primaryColor
+          foregroundColor: _primaryColor,
+          surfaceTintColor: _primaryColor,
+          side: const BorderSide(color: _primaryColor),
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5)))
         )
       )
   );
