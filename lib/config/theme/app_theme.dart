@@ -32,7 +32,8 @@ class AppTheme {
           side: const BorderSide(color: primaryColor),
           shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5)))
         )
-      )
+      ),
+
   );
 
   AppTheme copyWith() => AppTheme();
