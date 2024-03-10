@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movie/config/theme/app_theme.dart';
 
 class CustomFilledButton extends StatelessWidget {
   const CustomFilledButton({

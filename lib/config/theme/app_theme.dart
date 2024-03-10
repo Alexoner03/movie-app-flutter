@@ -8,6 +8,7 @@ class AppTheme {
   ThemeData getTheme() => ThemeData(
       useMaterial3: true,
       primaryColor: _primaryColor,
+      fontFamily: 'Lato',
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
           backgroundColor: _primaryColor,
